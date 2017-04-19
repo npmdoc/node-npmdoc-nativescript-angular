@@ -1,0 +1,1088 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="http://www.telerik.com"
+
+    >nativescript-angular (v1.5.2)</a>
+</h1>
+<h4>An Angular renderer that lets you build mobile apps with NativeScript.</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.nativescript-angular">module nativescript-angular</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">nativescript-angular.</span>base_value_accessor</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">nativescript-angular.</span>collection_facade</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">nativescript-angular.</span>element_registry</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">nativescript-angular.</span>hook_helper</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">nativescript-angular.</span>lang_facade</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">nativescript-angular.</span>router_url_tree</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.nativescript-angular.base_value_accessor">module nativescript-angular.base_value_accessor</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.nativescript-angular.base_value_accessor.BaseValueAccessor">
+            function <span class="apidocSignatureSpan">nativescript-angular.base_value_accessor.</span>BaseValueAccessor
+            <span class="apidocSignatureSpan">(view)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.nativescript-angular.collection_facade">module nativescript-angular.collection_facade</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.nativescript-angular.collection_facade.ListWrapper">
+            function <span class="apidocSignatureSpan">nativescript-angular.collection_facade.</span>ListWrapper
+            <span class="apidocSignatureSpan">{{signature}}</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.nativescript-angular.collection_facade.isListLikeIterable">
+            function <span class="apidocSignatureSpan">nativescript-angular.collection_facade.</span>isListLikeIterable
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.nativescript-angular.element_registry">module nativescript-angular.element_registry</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.nativescript-angular.element_registry.getViewClass">
+            function <span class="apidocSignatureSpan">nativescript-angular.element_registry.</span>getViewClass
+            <span class="apidocSignatureSpan">(elementName)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.nativescript-angular.element_registry.getViewMeta">
+            function <span class="apidocSignatureSpan">nativescript-angular.element_registry.</span>getViewMeta
+            <span class="apidocSignatureSpan">(nodeName)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.nativescript-angular.element_registry.isKnownView">
+            function <span class="apidocSignatureSpan">nativescript-angular.element_registry.</span>isKnownView
+            <span class="apidocSignatureSpan">(elementName)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.nativescript-angular.element_registry.registerElement">
+            function <span class="apidocSignatureSpan">nativescript-angular.element_registry.</span>registerElement
+            <span class="apidocSignatureSpan">(elementName, resolver, meta)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.nativescript-angular.hook_helper">module nativescript-angular.hook_helper</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.nativescript-angular.hook_helper.findProjectDir">
+            function <span class="apidocSignatureSpan">nativescript-angular.hook_helper.</span>findProjectDir
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.nativescript-angular.hook_helper.getBeforeLivesyncHookDir">
+            function <span class="apidocSignatureSpan">nativescript-angular.hook_helper.</span>getBeforeLivesyncHookDir
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.nativescript-angular.hook_helper.getHookFilePath">
+            function <span class="apidocSignatureSpan">nativescript-angular.hook_helper.</span>getHookFilePath
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.nativescript-angular.hook_helper.getHooksDir">
+            function <span class="apidocSignatureSpan">nativescript-angular.hook_helper.</span>getHooksDir
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.nativescript-angular.lang_facade">module nativescript-angular.lang_facade</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.nativescript-angular.lang_facade.getSymbolIterator">
+            function <span class="apidocSignatureSpan">nativescript-angular.lang_facade.</span>getSymbolIterator
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.nativescript-angular.lang_facade.isArray">
+            function <span class="apidocSignatureSpan">nativescript-angular.lang_facade.</span>isArray
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.nativescript-angular.lang_facade.isBlank">
+            function <span class="apidocSignatureSpan">nativescript-angular.lang_facade.</span>isBlank
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.nativescript-angular.lang_facade.isDate">
+            function <span class="apidocSignatureSpan">nativescript-angular.lang_facade.</span>isDate
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.nativescript-angular.lang_facade.isJsObject">
+            function <span class="apidocSignatureSpan">nativescript-angular.lang_facade.</span>isJsObject
+            <span class="apidocSignatureSpan">(o)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.nativescript-angular.lang_facade.isNumber">
+            function <span class="apidocSignatureSpan">nativescript-angular.lang_facade.</span>isNumber
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.nativescript-angular.lang_facade.isPresent">
+            function <span class="apidocSignatureSpan">nativescript-angular.lang_facade.</span>isPresent
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.nativescript-angular.lang_facade.print">
+            function <span class="apidocSignatureSpan">nativescript-angular.lang_facade.</span>print
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.nativescript-angular.lang_facade.setValueOnPath">
+            function <span class="apidocSignatureSpan">nativescript-angular.lang_facade.</span>setValueOnPath
+            <span class="apidocSignatureSpan">(global, path, value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">undefined <span class="apidocSignatureSpan">nativescript-angular.lang_facade.</span>global</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.nativescript-angular.router_url_tree">module nativescript-angular.router_url_tree</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.nativescript-angular.router_url_tree.containsTree">
+            function <span class="apidocSignatureSpan">nativescript-angular.router_url_tree.</span>containsTree
+            <span class="apidocSignatureSpan">(container, containee, exact)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.nativescript-angular.router_url_tree.equalPath">
+            function <span class="apidocSignatureSpan">nativescript-angular.router_url_tree.</span>equalPath
+            <span class="apidocSignatureSpan">(a, b)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.nativescript-angular" id="apidoc.module.nativescript-angular">module nativescript-angular</a></h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.nativescript-angular.base_value_accessor" id="apidoc.module.nativescript-angular.base_value_accessor">module nativescript-angular.base_value_accessor</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.nativescript-angular.base_value_accessor.BaseValueAccessor" id="apidoc.element.nativescript-angular.base_value_accessor.BaseValueAccessor">
+        function <span class="apidocSignatureSpan">nativescript-angular.base_value_accessor.</span>BaseValueAccessor
+        <span class="apidocSignatureSpan">(view)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function BaseValueAccessor(view) {
+    this.view = view;
+    this.onChange = function (_) { };
+    this.pendingChangeNotification = 0;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.nativescript-angular.collection_facade" id="apidoc.module.nativescript-angular.collection_facade">module nativescript-angular.collection_facade</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.nativescript-angular.collection_facade.ListWrapper" id="apidoc.element.nativescript-angular.collection_facade.ListWrapper">
+        function <span class="apidocSignatureSpan">nativescript-angular.collection_facade.</span>ListWrapper
+        <span class="apidocSignatureSpan">{{signature}}</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.nativescript-angular.collection_facade.isListLikeIterable" id="apidoc.element.nativescript-angular.collection_facade.isListLikeIterable">
+        function <span class="apidocSignatureSpan">nativescript-angular.collection_facade.</span>isListLikeIterable
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isListLikeIterable(obj) {
+    if (!lang_facade_1.isJsObject(obj))
+        return false;
+    return lang_facade_1.isArray(obj) ||
+        (!(obj instanceof Map) &#x26;&#x26;
+            lang_facade_1.getSymbolIterator() in obj); // JS Iterable have a Symbol.iterator prop
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+},
+set: function (value) {
+    this._items = value;
+    var needDiffer = true;
+    if (value instanceof observable_array_1.ObservableArray) {
+        needDiffer = false;
+    }
+    if (needDiffer &#x26;&#x26; !this._differ &#x26;&#x26; collection_facade_1.<span class="apidocCodeKeywordSpan">isListLikeIterable
+</span>(value)) {
+        this._differ = this._iterableDiffers.find(this._items)
+            .create(this._cdr, function (_index, item) { return item; });
+    }
+    this.listView.items = this._items;
+},
+enumerable: true,
+configurable: true
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.nativescript-angular.element_registry" id="apidoc.module.nativescript-angular.element_registry">module nativescript-angular.element_registry</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.nativescript-angular.element_registry.getViewClass" id="apidoc.element.nativescript-angular.element_registry.getViewClass">
+        function <span class="apidocSignatureSpan">nativescript-angular.element_registry.</span>getViewClass
+        <span class="apidocSignatureSpan">(elementName)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getViewClass(elementName) {
+    var entry = elementMap.get(elementName) ||
+        elementMap.get(elementName.toLowerCase());
+    if (!entry) {
+        throw new TypeError(&#x22;No known component for element &#x22; + elementName + &#x22;.&#x22;);
+    }
+    try {
+        return entry.resolver();
+    }
+    catch (e) {
+        throw new TypeError(&#x22;Could not load view for: &#x22; + elementName + &#x22;.&#x22; + e);
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    return detachedText;
+};
+ViewUtil.prototype.createView = function (name) {
+    trace_1.rendererLog(&#x22;Creating view: &#x22; + name);
+    if (!element_registry_1.isKnownView(name)) {
+        name = &#x22;ProxyViewContainer&#x22;;
+    }
+    var viewClass = element_registry_1.<span class="apidocCodeKeywordSpan">getViewClass</span>(name);
+    var view = new viewClass();
+    view.nodeName = name;
+    view.meta = element_registry_1.getViewMeta(name);
+    // we&#x27;re setting the node type of the view
+    // to &#x27;element&#x27; because of checks done in the
+    // dom animation engine:
+    // tslint:disable-next-line:max-line-length
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.nativescript-angular.element_registry.getViewMeta" id="apidoc.element.nativescript-angular.element_registry.getViewMeta">
+        function <span class="apidocSignatureSpan">nativescript-angular.element_registry.</span>getViewMeta
+        <span class="apidocSignatureSpan">(nodeName)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getViewMeta(nodeName) {
+    var meta = defaultViewMeta;
+    var entry = elementMap.get(nodeName) || elementMap.get(nodeName.toLowerCase());
+    if (entry &#x26;&#x26; entry.meta) {
+        meta = entry.meta;
+    }
+    return meta;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+trace_1.rendererLog(&#x22;Creating view: &#x22; + name);
+if (!element_registry_1.isKnownView(name)) {
+    name = &#x22;ProxyViewContainer&#x22;;
+}
+var viewClass = element_registry_1.getViewClass(name);
+var view = new viewClass();
+view.nodeName = name;
+view.meta = element_registry_1.<span class="apidocCodeKeywordSpan">getViewMeta</span>(name);
+// we&#x27;re setting the node type of the view
+// to &#x27;element&#x27; because of checks done in the
+// dom animation engine:
+// tslint:disable-next-line:max-line-length
+// https://github.com/angular/angular/blob/master/packages/animations/browser/src/render/dom_animation_engine.ts#L70-L81
+view.nodeType = ELEMENT_NODE_TYPE;
+return view;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.nativescript-angular.element_registry.isKnownView" id="apidoc.element.nativescript-angular.element_registry.isKnownView">
+        function <span class="apidocSignatureSpan">nativescript-angular.element_registry.</span>isKnownView
+        <span class="apidocSignatureSpan">(elementName)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isKnownView(elementName) {
+    return elementMap.has(elementName) ||
+        elementMap.has(elementName.toLowerCase());
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    var detachedText = this.createView(&#x22;DetachedText&#x22;);
+    detachedText.nodeName = &#x22;#text&#x22;;
+    detachedText.visibility = &#x22;collapse&#x22;;
+    return detachedText;
+};
+ViewUtil.prototype.createView = function (name) {
+    trace_1.rendererLog(&#x22;Creating view: &#x22; + name);
+    if (!element_registry_1.<span class="apidocCodeKeywordSpan">isKnownView</span>(name)) {
+        name = &#x22;ProxyViewContainer&#x22;;
+    }
+    var viewClass = element_registry_1.getViewClass(name);
+    var view = new viewClass();
+    view.nodeName = name;
+    view.meta = element_registry_1.getViewMeta(name);
+    // we&#x27;re setting the node type of the view
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.nativescript-angular.element_registry.registerElement" id="apidoc.element.nativescript-angular.element_registry.registerElement">
+        function <span class="apidocSignatureSpan">nativescript-angular.element_registry.</span>registerElement
+        <span class="apidocSignatureSpan">(elementName, resolver, meta)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function registerElement(elementName, resolver, meta) {
+    if (elementMap.has(elementName)) {
+        throw new Error(&#x22;Element for &#x22; + elementName + &#x22; already registered.&#x22;);
+    }
+    else {
+        var entry = { resolver: resolver, meta: meta };
+        elementMap.set(elementName, entry);
+        elementMap.set(elementName.toLowerCase(), entry);
+        elementMap.set(elementName.replace(camelCaseSplit, &#x22;$1-$2&#x22;).toLowerCase(), entry);
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        childView.parent = null;
+    }
+    else if (child instanceof view_1.View &#x26;&#x26; bar.titleView &#x26;&#x26; bar.titleView === childView) {
+        bar.titleView = null;
+    }
+},
+};
+element_registry_1.<span class="apidocCodeKeywordSpan">registerElement</span>(&#x22;ActionBar&#x22;, function () { return require
+(&#x22;ui/action-bar&#x22;).ActionBar; }, actionBarMeta);
+element_registry_1.registerElement(&#x22;ActionItem&#x22;, function () { return require(&#x22;ui/action-bar&#x22;).ActionItem; });
+element_registry_1.registerElement(&#x22;NavigationButton&#x22;, function () { return require(&#x22;ui/action-bar&#x22;).NavigationButton
+; });
+var ActionBarComponent = (function () {
+function ActionBarComponent(element, page) {
+    this.element = element;
+    this.page = page;
+    if (lang_facade_1.isBlank(this.page.actionBarHidden)) {
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.nativescript-angular.hook_helper" id="apidoc.module.nativescript-angular.hook_helper">module nativescript-angular.hook_helper</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.nativescript-angular.hook_helper.findProjectDir" id="apidoc.element.nativescript-angular.hook_helper.findProjectDir">
+        function <span class="apidocSignatureSpan">nativescript-angular.hook_helper.</span>findProjectDir
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function findProjectDir() {
+    var candidateDir = path.join(__dirname, &#x22;..&#x22;);
+    while (true) {
+        var oldCandidateDir = candidateDir;
+        candidateDir = path.dirname(candidateDir);
+        if (path.basename(candidateDir) === &#x27;node_modules&#x27;) {
+            continue;
+        }
+        var packageJsonFile = path.join(candidateDir, &#x27;package.json&#x27;);
+        if (fs.existsSync(packageJsonFile)) {
+            return candidateDir;
+        }
+        if (oldCandidateDir === candidateDir) {
+            return;
+        }
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+
+
+
+var fs = require(&#x22;fs&#x22;);
+var os = require(&#x22;os&#x22;);
+var hookHelper = require(&#x22;./hooks/hook-helper&#x22;);
+var projectDir = hookHelper.<span class="apidocCodeKeywordSpan">findProjectDir</span>();
+
+if (projectDir) {
+var hooksDir = hookHelper.getHooksDir(),
+    beforeLivesyncHookDir = hookHelper.getBeforeLivesyncHookDir(),
+    content = &#x27;module.exports = require(&#x22;nativescript-angular/hooks/before-livesync&#x22;);&#x27;;
+if (!fs.existsSync(hooksDir)) {
+    fs.mkdirSync(hooksDir);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.nativescript-angular.hook_helper.getBeforeLivesyncHookDir" id="apidoc.element.nativescript-angular.hook_helper.getBeforeLivesyncHookDir">
+        function <span class="apidocSignatureSpan">nativescript-angular.hook_helper.</span>getBeforeLivesyncHookDir
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getBeforeLivesyncHookDir() {
+    return path.join(exports.getHooksDir(), &#x22;before-livesync&#x22;);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var fs = require(&#x22;fs&#x22;);
+var os = require(&#x22;os&#x22;);
+var hookHelper = require(&#x22;./hooks/hook-helper&#x22;);
+var projectDir = hookHelper.findProjectDir();
+
+if (projectDir) {
+var hooksDir = hookHelper.getHooksDir(),
+    beforeLivesyncHookDir = hookHelper.<span class="apidocCodeKeywordSpan">getBeforeLivesyncHookDir</span>(),
+    content = &#x27;module.exports = require(&#x22;nativescript-angular/hooks/before-livesync&#x22;);&#x27;;
+if (!fs.existsSync(hooksDir)) {
+    fs.mkdirSync(hooksDir);
+}
+if (!fs.existsSync(beforeLivesyncHookDir)) {
+    fs.mkdirSync(beforeLivesyncHookDir);
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.nativescript-angular.hook_helper.getHookFilePath" id="apidoc.element.nativescript-angular.hook_helper.getHookFilePath">
+        function <span class="apidocSignatureSpan">nativescript-angular.hook_helper.</span>getHookFilePath
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getHookFilePath() {
+    return path.join(exports.getBeforeLivesyncHookDir(), &#x22;nativescript-angular-sync.js&#x22;);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        content = &#x27;module.exports = require(&#x22;nativescript-angular/hooks/before-livesync&#x22;);&#x27;;
+    if (!fs.existsSync(hooksDir)) {
+        fs.mkdirSync(hooksDir);
+    }
+    if (!fs.existsSync(beforeLivesyncHookDir)) {
+        fs.mkdirSync(beforeLivesyncHookDir);
+    }
+    fs.writeFileSync(hookHelper.<span class="apidocCodeKeywordSpan">getHookFilePath</span>(), content + os.EOL);
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.nativescript-angular.hook_helper.getHooksDir" id="apidoc.element.nativescript-angular.hook_helper.getHooksDir">
+        function <span class="apidocSignatureSpan">nativescript-angular.hook_helper.</span>getHooksDir
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getHooksDir() {
+    return path.join(exports.findProjectDir(), &#x27;hooks&#x27;);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+var fs = require(&#x22;fs&#x22;);
+var os = require(&#x22;os&#x22;);
+var hookHelper = require(&#x22;./hooks/hook-helper&#x22;);
+var projectDir = hookHelper.findProjectDir();
+
+if (projectDir) {
+var hooksDir = hookHelper.<span class="apidocCodeKeywordSpan">getHooksDir</span>(),
+    beforeLivesyncHookDir = hookHelper.getBeforeLivesyncHookDir(),
+    content = &#x27;module.exports = require(&#x22;nativescript-angular/hooks/before-livesync&#x22;);&#x27;;
+if (!fs.existsSync(hooksDir)) {
+    fs.mkdirSync(hooksDir);
+}
+if (!fs.existsSync(beforeLivesyncHookDir)) {
+    fs.mkdirSync(beforeLivesyncHookDir);
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.nativescript-angular.lang_facade" id="apidoc.module.nativescript-angular.lang_facade">module nativescript-angular.lang_facade</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.nativescript-angular.lang_facade.getSymbolIterator" id="apidoc.element.nativescript-angular.lang_facade.getSymbolIterator">
+        function <span class="apidocSignatureSpan">nativescript-angular.lang_facade.</span>getSymbolIterator
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getSymbolIterator() {
+    if (isBlank(_symbolIterator)) {
+        if (isPresent(globalScope.Symbol) &#x26;&#x26; isPresent(Symbol.iterator)) {
+            _symbolIterator = Symbol.iterator;
+        }
+        else {
+            // es6-shim specific logic
+            var keys = Object.getOwnPropertyNames(Map.prototype);
+            for (var i = 0; i &#x3c; keys.length; ++i) {
+                var key = keys[i];
+                if (key !== &#x27;entries&#x27; &#x26;&#x26; key !== &#x27;size&#x27; &#x26;&#x26;
+                    Map.prototype[key] === Map.prototype[&#x27;entries&#x27;]) {
+                    _symbolIterator = key;
+                }
+            }
+        }
+    }
+    return _symbolIterator;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+//Copied unexported functions from @angular/core/src/facade/collection
+var lang_facade_1 = require(&#x22;./lang-facade&#x22;);
+function isListLikeIterable(obj) {
+if (!lang_facade_1.isJsObject(obj))
+    return false;
+return lang_facade_1.isArray(obj) ||
+    (!(obj instanceof Map) &#x26;&#x26;
+        lang_facade_1.<span class="apidocCodeKeywordSpan">getSymbolIterator</span>() in obj); // JS Iterable have a Symbol.iterator
+ prop
+}
+exports.isListLikeIterable = isListLikeIterable;
+var ListWrapper = (function () {
+function ListWrapper() {
+}
+// JS has no way to express a statically fixed size list, but dart does so we
+// keep both methods.
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.nativescript-angular.lang_facade.isArray" id="apidoc.element.nativescript-angular.lang_facade.isArray">
+        function <span class="apidocSignatureSpan">nativescript-angular.lang_facade.</span>isArray
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isArray(obj) {
+    return Array.isArray(obj);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+/* tslint:disable */
+//Copied unexported functions from @angular/core/src/facade/collection
+var lang_facade_1 = require(&#x22;./lang-facade&#x22;);
+function isListLikeIterable(obj) {
+if (!lang_facade_1.isJsObject(obj))
+    return false;
+return lang_facade_1.<span class="apidocCodeKeywordSpan">isArray</span>(obj) ||
+    (!(obj instanceof Map) &#x26;&#x26;
+        lang_facade_1.getSymbolIterator() in obj); // JS Iterable have a Symbol.iterator prop
+}
+exports.isListLikeIterable = isListLikeIterable;
+var ListWrapper = (function () {
+function ListWrapper() {
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.nativescript-angular.lang_facade.isBlank" id="apidoc.element.nativescript-angular.lang_facade.isBlank">
+        function <span class="apidocSignatureSpan">nativescript-angular.lang_facade.</span>isBlank
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isBlank(obj) {
+    return obj === undefined || obj === null;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+if (list.length == 0) {
+    return null;
+}
+var solution = null;
+var maxValue = -Infinity;
+for (var index = 0; index &#x3c; list.length; index++) {
+    var candidate = list[index];
+    if (lang_facade_1.<span class="apidocCodeKeywordSpan">isBlank</span>(candidate)) {
+        continue;
+    }
+    var candidateValue = predicate(candidate);
+    if (candidateValue &#x3e; maxValue) {
+        solution = candidate;
+        maxValue = candidateValue;
+    }
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.nativescript-angular.lang_facade.isDate" id="apidoc.element.nativescript-angular.lang_facade.isDate">
+        function <span class="apidocSignatureSpan">nativescript-angular.lang_facade.</span>isDate
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isDate(obj) {
+    return obj instanceof Date &#x26;&#x26; !isNaN(obj.valueOf());
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    return _this;
+}
+DateValueAccessor.prototype.dateChangeListener = function (event) {
+    this.onChange(event.value);
+};
+DateValueAccessor.prototype.writeValue = function (value) {
+    var normalizedValue = lang_facade_1.isBlank(value) ? new Date() : value;
+    if (!lang_facade_1.<span class="apidocCodeKeywordSpan">isDate</span>(normalizedValue)) {
+        if (typeof normalizedValue === &#x22;string&#x22;) {
+            normalizedValue = new Date(normalizedValue);
+        }
+        else if (typeof normalizedValue === &#x22;number&#x22;) {
+            normalizedValue = new Date(normalizedValue);
+        }
+        if (!lang_facade_1.isDate(normalizedValue)) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.nativescript-angular.lang_facade.isJsObject" id="apidoc.element.nativescript-angular.lang_facade.isJsObject">
+        function <span class="apidocSignatureSpan">nativescript-angular.lang_facade.</span>isJsObject
+        <span class="apidocSignatureSpan">(o)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isJsObject(o) {
+    return o !== null &#x26;&#x26; (typeof o === &#x27;function&#x27; || typeof o === &#x27;object&#x27;);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+
+
+/* tslint:disable */
+//Copied unexported functions from @angular/core/src/facade/collection
+var lang_facade_1 = require(&#x22;./lang-facade&#x22;);
+function isListLikeIterable(obj) {
+    if (!lang_facade_1.<span class="apidocCodeKeywordSpan">isJsObject</span>(obj))
+        return false;
+    return lang_facade_1.isArray(obj) ||
+        (!(obj instanceof Map) &#x26;&#x26;
+            lang_facade_1.getSymbolIterator() in obj); // JS Iterable have a Symbol.iterator prop
+}
+exports.isListLikeIterable = isListLikeIterable;
+var ListWrapper = (function () {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.nativescript-angular.lang_facade.isNumber" id="apidoc.element.nativescript-angular.lang_facade.isNumber">
+        function <span class="apidocSignatureSpan">nativescript-angular.lang_facade.</span>isNumber
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isNumber(obj) {
+    return typeof obj === &#x27;number&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+};
+NumberValueAccessor.prototype.writeValue = function (value) {
+    var normalizedValue;
+    if (lang_facade_1.isBlank(value)) {
+        normalizedValue = 0;
+    }
+    else {
+        if (lang_facade_1.<span class="apidocCodeKeywordSpan">isNumber</span>(value)) {
+            normalizedValue = value;
+        }
+        else {
+            var parsedValue = Number(value);
+            normalizedValue = isNaN(parsedValue) ? 0 : parsedValue;
+        }
+    }
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.nativescript-angular.lang_facade.isPresent" id="apidoc.element.nativescript-angular.lang_facade.isPresent">
+        function <span class="apidocSignatureSpan">nativescript-angular.lang_facade.</span>isPresent
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isPresent(obj) {
+    return obj !== undefined &#x26;&#x26; obj !== null;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ListWrapper.slice = function (l, from, to) {
+    if (from === void 0) { from = 0; }
+    if (to === void 0) { to = null; }
+    return l.slice(from, to === null ? undefined : to);
+};
+ListWrapper.splice = function (l, from, length) { return l.splice(from, length); };
+ListWrapper.sort = function (l, compareFn) {
+    if (lang_facade_1.<span class="apidocCodeKeywordSpan">isPresent</span>(compareFn)) {
+        l.sort(compareFn);
+    }
+    else {
+        l.sort();
+    }
+};
+ListWrapper.toString = function (l) { return l.toString(); };
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.nativescript-angular.lang_facade.print" id="apidoc.element.nativescript-angular.lang_facade.print">
+        function <span class="apidocSignatureSpan">nativescript-angular.lang_facade.</span>print
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function print(obj) {
+    console.log(obj);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    }
+};
+NativeScriptDomAdapter.prototype.hasProperty = function (_element, _name) {
+    // TODO: actually check if the property exists.
+    return true;
+};
+NativeScriptDomAdapter.prototype.log = function (arg) {
+    lang_facade_1.<span class="apidocCodeKeywordSpan">print</span>(arg);
+};
+NativeScriptDomAdapter.prototype.logError = function (arg) {
+    lang_facade_1.print(arg);
+};
+NativeScriptDomAdapter.prototype.logGroup = function (arg) {
+    lang_facade_1.print(arg);
+};
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.nativescript-angular.lang_facade.setValueOnPath" id="apidoc.element.nativescript-angular.lang_facade.setValueOnPath">
+        function <span class="apidocSignatureSpan">nativescript-angular.lang_facade.</span>setValueOnPath
+        <span class="apidocSignatureSpan">(global, path, value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function setValueOnPath(global, path, value) {
+    var parts = path.split(&#x27;.&#x27;);
+    var obj = global;
+    while (parts.length &#x3e; 1) {
+        var name_1 = parts.shift();
+        if (obj.hasOwnProperty(name_1) &#x26;&#x26; isPresent(obj[name_1])) {
+            obj = obj[name_1];
+        }
+        else {
+            obj = obj[name_1] = {};
+        }
+    }
+    if (obj === undefined || obj === null) {
+        obj = {};
+    }
+    obj[parts.shift()] = value;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.nativescript-angular.router_url_tree" id="apidoc.module.nativescript-angular.router_url_tree">module nativescript-angular.router_url_tree</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.nativescript-angular.router_url_tree.containsTree" id="apidoc.element.nativescript-angular.router_url_tree.containsTree">
+        function <span class="apidocSignatureSpan">nativescript-angular.router_url_tree.</span>containsTree
+        <span class="apidocSignatureSpan">(container, containee, exact)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function containsTree(container, containee, exact) {
+    if (exact) {
+        return equalSegmentGroups(container.root, containee.root);
+    }
+    else {
+        return containsSegmentGroup(container.root, containee.root);
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    var currentUrlTree = this.router.parseUrl(this.router.url);
+    var isActiveLinks = this.reduceList(currentUrlTree, this.links);
+    this.classes.forEach(function (c) { return _this.renderer.setElementClass(_this.element.nativeElement, c, isActiveLinks); });
+};
+NSRouterLinkActive.prototype.reduceList = function (currentUrlTree, q) {
+    var _this = this;
+    return q.reduce(function (res, link) {
+        return res || router_url_tree_1.<span class="apidocCodeKeywordSpan">containsTree</span>(currentUrlTree, link.urlTree, _this
+.nsRouterLinkActiveOptions.exact);
+    }, false);
+};
+return NSRouterLinkActive;
+}());
+__decorate([
+core_1.ContentChildren(ns_router_link_1.NSRouterLink),
+__metadata(&#x22;design:type&#x22;, core_1.QueryList)
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.nativescript-angular.router_url_tree.equalPath" id="apidoc.element.nativescript-angular.router_url_tree.equalPath">
+        function <span class="apidocSignatureSpan">nativescript-angular.router_url_tree.</span>equalPath
+        <span class="apidocSignatureSpan">(a, b)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function equalPath(a, b) {
+    if (a.length !== b.length) {
+        return false;
+    }
+    for (var i = 0; i &#x3c; a.length; ++i) {
+        if (a[i].path !== b[i].path) {
+            return false;
+        }
+    }
+    return true;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
